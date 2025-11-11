@@ -14,8 +14,43 @@
       align-items: center;
       justify-content: center;
       height: 100vh;
+      flex-direction: column;
     }
 
+    /* === NAVIGATION BAR === */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 15px 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 60px;
+    }
+
+    .nav-link {
+      color: #d87b00;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease, border-bottom 0.3s ease;
+      padding-bottom: 4px;
+    }
+
+    .nav-link:hover {
+      color: #b35f00;
+      border-bottom: 2px solid #d87b00;
+    }
+
+    /* === MAIN CONTENT === */
     .container {
       display: flex;
       align-items: center;
@@ -23,6 +58,7 @@
       gap: 60px;
       max-width: 1000px;
       padding: 40px;
+      margin-top: 100px; /* pushes content below navbar */
     }
 
     .photo img {
@@ -41,7 +77,7 @@
     .intro h1 {
       font-size: 2.5rem;
       margin: 0 0 15px 0;
-      color: #d87b00; /* darker orange accent */
+      color: #d87b00;
     }
 
     .intro p {
@@ -68,12 +104,16 @@
   </style>
 </head>
 <body>
-  <nav style="position: fixed; top: 25px; right: 40px; font-weight: 600;">
-    <a href="/" style="margin-right: 20px; color: #d87b00; text-decoration: none;">Home</a>
-    <a href="/portfolio.html" style="margin-right: 20px; color: #d87b00; text-decoration: none;">Portfolio</a>
-    <a href="/resume.html" style="color: #d87b00; text-decoration: none;">Resume</a>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-link">Home</a>
+      <a href="/portfolio.html" class="nav-link">Portfolio</a>
+      <a href="/resume.html" class="nav-link">Resume</a>
+    </div>
   </nav>
 
+  <!-- Main Content -->
   <div class="container">
     <div class="photo">
       <img src="https://oykusen39.github.io/images/lauren-1010929653-1.JPG" alt="Oyku Sen">
