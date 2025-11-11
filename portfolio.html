@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Oyku Sen</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', 'Helvetica Neue', sans-serif;
+      background: linear-gradient(180deg, #fff6e5, #fff9f0);
+      color: #1f1f1f;
+      padding: 50px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    h1 {
+      color: #d87b00;
+      font-size: 2.5rem;
+    }
+
+    p.intro {
+      max-width: 650px;
+      margin: 10px auto;
+      font-size: 1.15rem;
+      line-height: 1.7;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h3 {
+      color: #d87b00;
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #333;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #d87b00;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .card a:hover {
+      color: #b35f00;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portfolio</h1>
+    <p class="intro">
+      A selection of my data analytics, machine learning, and deep learning projects.
+      Each project includes a brief overview and a link to the corresponding GitHub repository.
+    </p>
+  </header>
+
+  <section class="grid">
+    <div class="card">
+      <h3>Project 1 Title</h3>
+      <p>Short description of what the project does and what tools or methods were used.</p>
+      <a href="#">View on GitHub →</a>
+    </div>
+
+    <div class="card">
+      <h3>Project 2 Title</h3>
+      <p>Brief overview, results, or highlights — could mention frameworks or datasets used.</p>
+      <a href="#">View on GitHub →</a>
+    </div>
+
+    <div class="card">
+      <h3>Project 3 Title</h3>
+      <p>Description placeholder — e.g., predictive modeling, analytics dashboard, etc.</p>
+      <a href="#">View on GitHub →</a>
+    </div>
+
+    <div class="card">
+      <h3>Project 4 Title</h3>
+      <p>Brief explanation of the purpose and what made it interesting or challenging.</p>
+      <a href="#">View on GitHub →</a>
+    </div>
+
+    <div class="card">
+      <h3>Project 5 Title</h3>
+      <p>Short description placeholder for one of your deep learning or automation projects.</p>
+      <a href="#">View on GitHub →</a>
+    </div>
+
+    <div class="card">
+      <h3>Project 6 Title</h3>
+      <p>Optional — something like your research work or data visualization piece.</p>
+      <a href="#">View on GitHub →</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Oyku Sen
+  </footer>
+</body>
+</html>
