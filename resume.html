@@ -8,27 +8,119 @@
     body {
       margin: 0;
       font-family: 'Inter', 'Helvetica Neue', sans-serif;
-      background: #fff6e5;
-      color: #1f1f1f;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      background-color: #fff6e5;
+      color: #1a1a1a;
       text-align: center;
     }
-    h1 {
-      color: #d87b00;
-      font-size: 2.5rem;
+
+    /* NAVBAR */
+    .navbar {
+      width: 100%;
+      padding: 22px 0;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: center;
+      gap: 80px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     }
+
+    .navbar a {
+      color: #d87b00;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.15rem;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: #d87b00;
+      transition: width 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: #b35f00;
+    }
+
+    .navbar a:hover::after {
+      width: 100%;
+    }
+
+    /* CONTENT */
+    main {
+      padding-top: 160px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #d87b00;
+      margin-bottom: 20px;
+    }
+
     p {
       font-size: 1.2rem;
       color: #333;
+      line-height: 1.7;
+    }
+
+    .resume-box {
+      background: #fff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+      margin-top: 40px;
+    }
+
+    .resume-box a {
+      text-decoration: none;
+      color: #d87b00;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    .resume-box a:hover {
+      color: #b35f00;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      font-size: 0.95rem;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <h1>Resume</h1>
-  <p>My resume will be available here soon.</p>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="/">Home</a>
+    <a href="/portfolio.html">Portfolio</a>
+    <a href="/resume.html">Resume</a>
+  </nav>
+
+  <!-- CONTENT -->
+  <main>
+    <h1>Resume</h1>
+    <p>My resume will be available here soon. You’ll be able to view and download it directly.</p>
+
+    <div class="resume-box">
+      <a href="#">📄 Download Resume (Coming Soon)</a>
+    </div>
+  </main>
+
+  <footer>© 2025 Oyku Sen</footer>
 </body>
 </html>
