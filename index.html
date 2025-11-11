@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oyku Sen</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', 'Helvetica Neue', sans-serif;
+      background: #fff6e5; /* very light orange */
+      color: #1f1f1f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 60px;
+      max-width: 1000px;
+      padding: 40px;
+    }
+
+    .photo img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.4s ease;
+    }
+
+    .photo img:hover {
+      transform: scale(1.05);
+    }
+
+    .intro h1 {
+      font-size: 2.5rem;
+      margin: 0 0 15px 0;
+      color: #d87b00; /* darker orange accent */
+    }
+
+    .intro p {
+      max-width: 500px;
+      font-size: 1.15rem;
+      line-height: 1.7;
+    }
+
+    .links {
+      margin-top: 20px;
+    }
+
+    .links a {
+      text-decoration: none;
+      color: #d87b00;
+      font-weight: 600;
+      margin-right: 20px;
+      transition: color 0.3s;
+    }
+
+    .links a:hover {
+      color: #b35f00;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="photo">
+      <img src="/images/lauren-1010929653-1.jpg" alt="Oyku Sen">
+    </div>
+    <div class="intro">
+      <h1>Oyku Sen</h1>
+      <p>
+        Hi! I’m Oyku — a data-driven analyst and researcher passionate about uncovering patterns 
+        in behavior, technology, and society. I explore projects across 
+        <b>data analytics</b>, <b>machine learning</b>, and <b>deep learning</b>, 
+        turning complexity into insight.
+      </p>
+      <div class="links">
+        <a href="mailto:oykusen@usc.edu">Email</a>
+        <a href="https://github.com/oykusen39">GitHub</a>
+        <a href="https://www.linkedin.com/in/oyku-sen-547435250/">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
