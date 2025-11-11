@@ -23,7 +23,7 @@ repository               : "oykusen39/oykusen39.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "/images/lauren-1010929653-1.JPG"
+  avatar           : "/images/lauren-1010929653-1.jpg"
   name             : "Oyku Sen"
   pronouns         : "she/her"
   bio              : "Data-driven analyst and researcher passionate about uncovering patterns in behavior, technology, and society."
