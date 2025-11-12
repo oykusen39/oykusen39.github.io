@@ -79,11 +79,11 @@
 
     /* GRID */
     .grid {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); /* flexible 3-column layout */
+      gap: 22px; /* tighter but even spacing */
+      align-items: start; /* ensures uneven cards align neatly at top */
       justify-content: center;
-      align-items: flex-start;
-      gap: 24px; 
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 40px 80px;
