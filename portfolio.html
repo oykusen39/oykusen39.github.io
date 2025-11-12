@@ -79,35 +79,34 @@
 
     /* GRID */
     .grid {
-      column-count: 3;              /* Number of columns */
-      column-gap: 22px;             /* Horizontal space between columns */
-      max-width: 1300px;
-      margin: 40px auto;
-      padding: 0 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 60px 100px;
     }
 
     .card {
-      display: inline-block;        /* Required for masonry flow */
       background: #ffffff;
-      margin: 0 0 22px;             /* Vertical space between cards */
       padding: 30px;
       border-radius: 16px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-      border: 1px solid rgba(0, 0, 0, 0.05);
-      width: 100%;                  /* Each card takes full column width */
-      break-inside: avoid;          /* Prevents card breaking between columns */
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
     }
 
     .card:hover {
-      transform: translateY(-4px);
+      transform: translateY(-6px);
       box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
     }
 
     .card h3 {
       color: #d87b00;
       font-size: 1.4rem;
-      margin-bottom: 18px;
+      margin-bottom: 16px;
       text-shadow: 0.6px 0.6px 0.8px rgba(0, 0, 0, 0.15);
     }
 
@@ -161,7 +160,8 @@
     <a href="/projects/ethereum.html" class="card">
       <h3>Predicting Ethereum Network Gas Usage with DNN</h3>
       <div class="keywords">
-        <span>Python</span><span>TensorFlow</span><span>Deep Neural Networks (DNNs)</span><span>Functional API</span><span>Gradient-Stability Techniques</span><span>Regularization Methods</span><span>Bayesian Optimization</span><span>Feature Extraction via Encoder Networks</span>
+        <span>Python</span><span>TensorFlow</span><span>Deep Neural Networks</span><span>Gradient-Stability Techniques</span><span>Regularization Methods</span><span>Bayesian Optimization</span><span>Feature Extraction</span>
+      </div>
       </div>
     </a>
 
