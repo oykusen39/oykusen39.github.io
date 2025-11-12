@@ -79,11 +79,8 @@
 
     /* GRID */
     .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); /* flexible 3-column layout */
-      gap: 22px; /* tighter but even spacing */
-      align-items: start; /* ensures uneven cards align neatly at top */
-      justify-content: center;
+      column-count: 3; /* three flowing columns */
+      column-gap: 22px; /* spacing between them */
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 40px 80px;
@@ -98,10 +95,10 @@
       cursor: pointer;
       text-decoration: none;
       color: inherit;
-      display: flex;
+      display: inline-block;
       flex-direction: column;
+      width: 100%;
       height: auto; 
-      min-height: 180px; 
       border: 1px solid rgba(0, 0, 0, 0.04);
     }
 
