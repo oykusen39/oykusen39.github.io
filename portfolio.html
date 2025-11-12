@@ -93,6 +93,9 @@
       border-radius: 16px;
       box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
     }
 
     .card:hover {
@@ -103,24 +106,22 @@
     .card h3 {
       color: #d87b00;
       font-size: 1.4rem;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
-    .card p {
-      color: #333;
-      font-size: 1rem;
-      line-height: 1.6;
-      margin-bottom: 15px;
+    .keywords {
+      color: #555;
+      font-size: 0.95rem;
+      line-height: 1.5;
     }
 
-    .card a {
-      text-decoration: none;
-      color: #d87b00;
+    .keywords span {
+      background: #fff1d1;
+      padding: 3px 7px;
+      border-radius: 5px;
+      margin: 3px;
+      display: inline-block;
       font-weight: 600;
-      transition: color 0.3s ease;
-    }
-
-    .card a:hover {
       color: #b35f00;
     }
 
@@ -143,41 +144,49 @@
   <!-- HEADER -->
   <header>
     <h1>Portfolio</h1>
-    <p>Here’s a selection of projects showcasing my work in analytics, machine learning, and AI applications.  
-    Each project includes an overview and a link to its GitHub repository.</p>
+    <p>Explore a selection of my projects across analytics, AI, and programming; from machine learning models to data-driven research.</p>
   </header>
 
   <!-- PROJECT GRID -->
   <section class="grid">
+    <a href="/projects/recommender.html" class="card">
+      <h3>Recommender System Using CNN</h3>
+      <div class="keywords">
+        <span>Python</span><span>TensorFlow</span><span>Recommendation Systems</span><span>CNN</span>
+      </div>
+    </a>
+
+    <a href="/projects/ethereum.html" class="card">
+      <h3>Predicting Ethereum Network Gas Usage with DNN</h3>
+      <div class="keywords">
+        <span>Python</span><span>TensorFlow</span><span>DNN</span><span>Bayesian Search</span><span>Gradient-Stability Techniques</span>
+      </div>
+    </a>
+
+    <a href="/projects/churn.html" class="card">
+      <h3>Customer Churn Analysis</h3>
+      <div class="keywords">
+        <span>Python</span><span>scikit-learn</span><span>PCA</span><span>K-Means</span><span>Decision Trees</span><span>GridSearchCV</span>
+      </div>
+    </a>
+
+    <a href="/projects/tictactoe.html" class="card">
+      <h3>Tic-Tac-Toe AI</h3>
+      <div class="keywords">
+        <span>C++</span><span>Minimax</span><span>DFS</span><span>Tree Traversal</span><span>OOP</span><span>Heuristics</span>
+      </div>
+    </a>
+
+    <a href="/projects/apology.html" class="card">
+      <h3>Shift in Meaning of “Apology”</h3>
+      <div class="keywords">
+        <span>R</span><span>Data Analysis</span><span>Regression</span><span>t-test</span><span>ANOVA</span><span>Tukey HSD</span>
+      </div>
+    </a>
+
     <div class="card">
-      <h3>Project 1 Title</h3>
-      <p>Brief description of the project and its outcome.</p>
-      <a href="#">View on GitHub →</a>
-    </div>
-    <div class="card">
-      <h3>Project 2 Title</h3>
-      <p>What tools or datasets were used and what insights emerged.</p>
-      <a href="#">View on GitHub →</a>
-    </div>
-    <div class="card">
-      <h3>Project 3 Title</h3>
-      <p>Short summary of goals and final results.</p>
-      <a href="#">View on GitHub →</a>
-    </div>
-    <div class="card">
-      <h3>Project 4 Title</h3>
-      <p>Description placeholder for a behavioral or predictive model.</p>
-      <a href="#">View on GitHub →</a>
-    </div>
-    <div class="card">
-      <h3>Project 5 Title</h3>
-      <p>Placeholder for a visualization or dashboard project.</p>
-      <a href="#">View on GitHub →</a>
-    </div>
-    <div class="card">
-      <h3>Project 6 Title</h3>
-      <p>Placeholder for a research-based or analytical exploration.</p>
-      <a href="#">View on GitHub →</a>
+      <h3>Coming Soon</h3>
+      <div class="keywords"><span>New Project</span><span>Stay Tuned</span></div>
     </div>
   </section>
 
