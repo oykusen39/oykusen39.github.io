@@ -110,12 +110,26 @@
     </div>
     <p>
       <!-- Replace this text with your detailed summary -->
-      Developed a deep learning framework to predict minute-level Ethereum gas usage using on-chain and market activity data for DSO-456 Midterm Exam.
-      Using TensorFlow/Keras, I implemented and evaluated multiple architectures from single-perceptron baselines to deep neural networks using Functional API with He initialization, experimenting with activation functions (ReLU, Leaky ReLU, Swish), gradient-stability techniques (clipping, batch normalization), and regularization methods (dropout, L1, early stopping). 
-      Hyperparameter optimization was performed via Random and Bayesian Search to refine learning rate, layer depth, and batch size. All preprocessing and training used chronologically split data to prevent leakage, with performance measured through R² and MSE. 
-      Results showed a substantial improvement from a PCA-linear baseline (R² ≈ 0.59) to the Bayesian-optimized DNN (R² ≈ 0.70), demonstrating the network’s ability to capture nonlinear dependencies in volatile crypto-economic environments.
+      Developed a deep learning framework to predict minute-level Ethereum gas usage using on-chain and market activity data for DSO-456 Midterm Exam</b>.
     </p>
-    <a href="#" class="link-btn">View Code →</a>
+    <p>
+      Implemented multiple architectures — from single-perceptron baselines to deep neural networks 
+      using TensorFlow/Keras Functional API — with <b>He initialization</b> and activation experiments 
+      (ReLU, Leaky ReLU, Swish). Applied gradient-stability and regularization methods 
+      (batch normalization, dropout, L1, early stopping).
+    </p>
+    <p>
+      Tuned hyperparameters via <b>Random and Bayesian Search</b> to refine learning rate, layer depth, 
+      and batch size, using chronologically split data to avoid leakage. 
+      Results showed a strong improvement from baseline (R² ≈ 0.59) 
+      to optimized DNN (R² ≈ 0.70).
+    </p>
+    <a href="https://drive.google.com/file/d/1Xgw5GyCZjewBlIrtQThA4eLJKRsxqfWV/view?usp=sharing" 
+       class="link-btn" target="_blank">
+       <img src="https://img.icons8.com/color/24/000000/google-colab.png" 
+            style="vertical-align: middle; margin-right: 8px; height: 20px;">
+       Open in Colab →
+    </a>
   </div>
 
   <footer>© 2025 Oyku Sen</footer>
